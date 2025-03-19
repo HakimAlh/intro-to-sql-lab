@@ -9,20 +9,24 @@ select name, code, region from countries where region = 'Southern Europe' order 
 
 -- \d
 
-select * from countries;
-select language from countrylanguages where countrycode = 'VAT';
-select countries.name as country, countrylanguages.name as countrylanguage from countries
-join countrylanguage
+-- select * from countries;
+-- select language from countrylanguages where countrycode = 'VAT';
+-- select countries.name as country, countrylanguages.name as countrylanguage from countries
+-- join countrylanguage
 
 
 
-
+SELECT language FROM countrylanguages WHERE countrycode= 'VAT';
 
 -- Clue #3: We have new news on the classes Carmen attended – our gumshoes tell us she's moved on to a different country, a country where people speak only the language she was learning. Find out which nearby country speaks nothing but that language.
 
 -- Write SQL query here
 
--- select * from cities order by population ASC;
+-- select * from countrylanguages   (language) 
+-- select * from countries  (localname)
+-- SELECT countrylanguages.language, countries.localname
+-- FROM countrylanguages
+-- INNER JOIN countries ON countrylanguages.language=countries.surfacearea;
 
 
 
